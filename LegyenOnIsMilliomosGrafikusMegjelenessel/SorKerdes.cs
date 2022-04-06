@@ -8,6 +8,7 @@ namespace LegyenOnIsMilliomosGrafikusMegjelenessel
 {
     class SorKerdes
     {
+        //változas
         //Tegye az alábbi növényeket virágzási idejük kezdete szerint időrendbe!;ibolya;rózsa;orgona;őszi rózsa;ACBD;BIOLÓGIA
         private string kerdes;
         private List<string> valaszok;
