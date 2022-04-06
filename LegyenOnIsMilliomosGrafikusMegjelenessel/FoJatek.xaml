@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="Legyen Ön is Milliomos Játék" Height="450" Width="800" Background="#FF18132E">
     <Grid>
-        <Label x:Name="lbl_kerdes" Content="" Margin="70,59,70,0" VerticalAlignment="Top" Height="70" Foreground="#FF9EA6C1" FontSize="16"/>
+        <Label x:Name="lbl_kerdes" Content="" Margin="70,72,70,0" VerticalAlignment="Top" Height="57" Foreground="#FF9EA6C1" FontSize="16"/>
         <GroupBox x:Name="Keret" Header="" Height="100" Margin="60,40,60,0" VerticalAlignment="Top" Foreground="#FF9EA6C1"/>
-        <Button x:Name="btn_a" Content="" HorizontalAlignment="Left" Margin="70,190,0,0" VerticalAlignment="Top" Width="300" Height="43" Background="#FF6954C5" Foreground="#FF9EA6C1" Tag="A" />
-        <Button x:Name="btn_d" Content="" HorizontalAlignment="Left" Margin="422,264,0,0" VerticalAlignment="Top" Width="300" Height="43" Background="#FF6954C5" Foreground="#FF9EA6C1" Tag="D" />
-        <Button x:Name="btn_c" Content="" HorizontalAlignment="Left" Margin="70,264,0,0" VerticalAlignment="Top" Width="300" Height="43" Background="#FF6954C5" Foreground="#FF9EA6C1" Tag="C" />
-        <Button x:Name="btn_b" Content="" HorizontalAlignment="Left" Margin="422,190,0,0" VerticalAlignment="Top" Width="300" Height="43" Background="#FF6954C5" Foreground="#FF9EA6C1" Tag="B" />
+        <Button x:Name="btn_a" Content="" HorizontalAlignment="Left" Margin="70,190,0,0" VerticalAlignment="Top" Width="300" Height="43" Background="#FF6954C5" Foreground="#FF9EA6C1" Tag="A" Click="btn_valasz_Click"  />
+        <Button x:Name="btn_d" Content="" HorizontalAlignment="Left" Margin="422,264,0,0" VerticalAlignment="Top" Width="300" Height="43" Background="#FF6954C5" Foreground="#FF9EA6C1" Tag="D" Click="btn_valasz_Click"/>
+        <Button x:Name="btn_c" Content="" HorizontalAlignment="Left" Margin="70,264,0,0" VerticalAlignment="Top" Width="300" Height="43" Background="#FF6954C5" Foreground="#FF9EA6C1" Tag="C" Click="btn_valasz_Click"/>
+        <Button x:Name="btn_b" Content="" HorizontalAlignment="Left" Margin="422,190,0,0" VerticalAlignment="Top" Width="300" Height="43" Background="#FF6954C5" Foreground="#FF9EA6C1" Tag="B" Click="btn_valasz_Click"/>
     </Grid>
 </Window>

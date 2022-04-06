@@ -22,8 +22,9 @@ namespace LegyenOnIsMilliomosGrafikusMegjelenessel
     {
         private List<SorKerdesek> kerdesek;
         private Jatekos gamer;
-        private int[] ertekek;
+        private List<int> ertekek;
         private Random rnd;
+        private int valasztottKerdes;
 
         public FoJatek()
         {
@@ -36,6 +37,7 @@ namespace LegyenOnIsMilliomosGrafikusMegjelenessel
         private void Feltoltes()
         {
             this.kerdesek = new List<SorKerdesek>();
+            this.ertekek = new List<int>();
             for (int i = 0; i < 16; i++)
             {
                 this.kerdesek.Add(new SorKerdesek());
@@ -48,6 +50,21 @@ namespace LegyenOnIsMilliomosGrafikusMegjelenessel
             }
             be.Close();
             rnd = new Random();
+            this.ertekek.Add(5000);
+            this.ertekek.Add(10000);
+            this.ertekek.Add(25000);
+            this.ertekek.Add(50000);
+            this.ertekek.Add(100000);
+            this.ertekek.Add(200000);
+            this.ertekek.Add(300000);
+            this.ertekek.Add(500000);
+            this.ertekek.Add(800000);
+            this.ertekek.Add(1500000);
+            this.ertekek.Add(3000000);
+            this.ertekek.Add(5000000);
+            this.ertekek.Add(10000000);
+            this.ertekek.Add(20000000);
+            this.ertekek.Add(40000000);
         }
 
         private void JatekosElkeszitese()
@@ -57,13 +74,33 @@ namespace LegyenOnIsMilliomosGrafikusMegjelenessel
 
         private void KerdesElkeszitese()
         {
-            int i = rnd.Next(0, kerdesek[gamer.JatekosSzint].SorKerdesLista.Count); 
-            Keret.Content = gamer.JatekosSzint + ". kérdés: " + kerdesek[gamer.JatekosSzint].SorKerdesLista[i].Temakor;
-            lbl_kerdes.Content = kerdesek[gamer.JatekosSzint].SorKerdesLista[i].Kerdes;
-            btn_a.Content = kerdesek[gamer.JatekosSzint].SorKerdesLista[i].Valaszok[0];
-            btn_b.Content = kerdesek[gamer.JatekosSzint].SorKerdesLista[i].Valaszok[1];
-            btn_c.Content = kerdesek[gamer.JatekosSzint].SorKerdesLista[i].Valaszok[2];
-            btn_d.Content = kerdesek[gamer.JatekosSzint].SorKerdesLista[i].Valaszok[3];
+            valasztottKerdes = rnd.Next(0, kerdesek[gamer.JatekosSzint].SorKerdesLista.Count); 
+            Keret.Content = gamer.JatekosSzint + ". kérdés, ami " + ertekek[gamer.JatekosSzint-1] + " ft-os. Témakör: " + kerdesek[gamer.JatekosSzint].SorKerdesLista[valasztottKerdes].Temakor ;
+            lbl_kerdes.Content = kerdesek[gamer.JatekosSzint].SorKerdesLista[valasztottKerdes].Kerdes;
+            btn_a.Content = kerdesek[gamer.JatekosSzint].SorKerdesLista[valasztottKerdes].Valaszok[0];
+            btn_b.Content = kerdesek[gamer.JatekosSzint].SorKerdesLista[valasztottKerdes].Valaszok[1];
+            btn_c.Content = kerdesek[gamer.JatekosSzint].SorKerdesLista[valasztottKerdes].Valaszok[2];
+            btn_d.Content = kerdesek[gamer.JatekosSzint].SorKerdesLista[valasztottKerdes].Valaszok[3];
+        }
+
+        private void btn_valasz_Click(object sender, RoutedEventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Tag.Equals(kerdesek[gamer.JatekosSzint].SorKerdesLista[valasztottKerdes].Valaszkulcs))
+            {
+                FoJatek j = new FoJatek();
+                MessageBox.Show("Gratulálok a válaszod helyes, folytathatod a játékot.", "Információ",MessageBoxButton.OK,MessageBoxImage.Information);
+                this.gamer.JatekosSzint++;
+                this.Hide();
+                j.Show();
+            }
+            else
+            {
+                MainWindow m = new MainWindow();
+                MessageBox.Show("Sajnáljuk a válaszod helytelen, játékod véget ért.", "Információ", MessageBoxButton.OK, MessageBoxImage.Information);
+                this.Hide();
+                m.Show();
+            }
         }
     }
 }
