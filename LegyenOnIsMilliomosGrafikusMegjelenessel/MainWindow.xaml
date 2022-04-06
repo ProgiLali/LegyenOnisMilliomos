@@ -1,0 +1,15 @@
+﻿<Window x:Class="LegyenOnIsMilliomosGrafikusMegjelenessel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LegyenOnIsMilliomosGrafikusMegjelenessel"
+        mc:Ignorable="d"
+        Title="Legyen Ön is Milliomos főmenü" Height="450" Width="800" Background="#FF18132E">
+    <Grid>
+        <Label Content="Üdvözzöllek a Legyen ön is Milliomos játék főmenüjében."  Margin="112,79,111,0" VerticalAlignment="Top" Height="42" FontSize="22" FontStyle="Italic" Foreground="#FF9EA6C1"/>
+        <Button x:Name="btn_ujJatek" Content="Új játék" Margin="276,179,276,0" VerticalAlignment="Top" Background="#FF6954C5" Height="33" Foreground="#FF9EA6C1" FontSize="16" Click="btn_ujJatek_Click"/>
+        <Button x:Name="btn_informacio" Content="Játék szabályok" Margin="276,233,276,0" VerticalAlignment="Top" Background="#FF6954C5" Height="33" Foreground="#FF9EA6C1" FontSize="16" Click="btn_informacio_Click"/>
+
+    </Grid>
+</Window>

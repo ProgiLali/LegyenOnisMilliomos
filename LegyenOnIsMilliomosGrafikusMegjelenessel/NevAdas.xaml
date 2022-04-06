@@ -1,0 +1,15 @@
+﻿<Window x:Class="LegyenOnIsMilliomosGrafikusMegjelenessel.NevAdas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LegyenOnIsMilliomosGrafikusMegjelenessel"
+        mc:Ignorable="d"
+        Title="Legyen ÖN is Milliomos játékosnév megadása" Height="450" Width="800" Background="#FF18132E">
+    <Grid>
+        <Label Content="Kérem adja meg a nevét:" Margin="120,50,120,0" VerticalAlignment="Top" Height="42" Foreground="#FF9EA6C1" FontSize="18"/>
+        <TextBox x:Name="txb_nev" Height="23" Margin="199,120,199,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Background="#FF6954C5"/>
+        <Button x:Name="btn_tovabb" Content="Játék folytatása" Margin="330,188,330,0" VerticalAlignment="Top" Background="#FF6954C5" Height="37" Click="btn_tovabb_Click"/>
+
+    </Grid>
+</Window>
