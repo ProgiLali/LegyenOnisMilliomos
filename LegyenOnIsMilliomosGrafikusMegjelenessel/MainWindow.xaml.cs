@@ -51,5 +51,23 @@ namespace LegyenOnIsMilliomosGrafikusMegjelenessel
             m.Show();
         }
 
+        private void btn_dicsoseg_Click(object sender, RoutedEventArgs e)
+        {
+            DicsosegLista.dicsoseg = true;
+            DicsAblakMeghivasa();
+        }
+
+        private void btn_betoltes_Click(object sender, RoutedEventArgs e)
+        {
+            DicsosegLista.dicsoseg = false;
+            DicsAblakMeghivasa();
+        }
+
+        private void DicsAblakMeghivasa()
+        {
+            DicsosegLista d = new DicsosegLista();
+            this.Hide();
+            d.Show();
+        }
     }
 }

@@ -1,0 +1,16 @@
+﻿<Window x:Class="LegyenOnIsMilliomosGrafikusMegjelenessel.DicsosegLista"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LegyenOnIsMilliomosGrafikusMegjelenessel"
+        mc:Ignorable="d"
+        Title="Legyen Ön is Milliomos Legjobbjai" Height="450" Width="800" Background="#FF18132E">
+    <Grid>
+        <Label x:Name="lbl_szoveg" Content="A Játék legjobbjai:" Margin="150,45,150,0" VerticalAlignment="Top" Height="54" FontSize="24" Foreground="#FF9EA6C1" FontStyle="Italic"/>
+        <ListBox x:Name="lbox_nevek" Height="132" Margin="150,124,150,0" VerticalAlignment="Top" Background="#FF6954C5"/>
+        <Button x:Name="btn_fomenu" Content="Vissza a főmenübe" Margin="402,299,150,0" VerticalAlignment="Top" Background="#FF6954C5" Height="33" Foreground="#FF9EA6C1" FontSize="16" Click="btn_fomenu_Click" />
+        <Button x:Name="btn_betoltes" Content="Játék betöltése" Margin="150,299,402,0" VerticalAlignment="Top" Background="#FF6954C5" Height="33" Foreground="#FF9EA6C1" FontSize="16" />
+
+    </Grid>
+</Window>

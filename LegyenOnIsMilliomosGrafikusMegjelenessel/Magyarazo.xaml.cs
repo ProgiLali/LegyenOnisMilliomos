@@ -33,10 +33,12 @@ namespace LegyenOnIsMilliomosGrafikusMegjelenessel
 
         private void lbl_leiras_Loaded(object sender, RoutedEventArgs e)
         {
-            lbl_leiras.Content = "Új játékot kezdtél, a játék célja a következőek:" +
+            lbl_leiras.Content = "A Legyen ön is Milliomos játék szabályai és céljai:" +
                 "\n\t- Elöszőr is a sorkérdésre helyesen kell válaszolnod hogy bejuss a játékba." +
                 "\n\t- Ha bejutottál elkezdödhet a játék ahol 15 kérdésre kell helyesen válaszolnod a főnyereményért." +
-                "\n\t- Kezdetben 2 segítség áll rendelkezésedre: a válaszok felezése és a közönség segítség";
+                "\n\t- Kezdetben 2 segítség áll rendelkezésedre: a válaszok felezése és a közönség segítség." +
+                "\n\t- Minden telejesített kérdés után megálhatsz a biztos nyereményeddel akár a következő kérdés közben is.";
+
             if (MainWindow.ujjatek)
             {
                 lbl_ujJatek.Visibility = Visibility.Visible;

@@ -19,7 +19,7 @@ namespace LegyenOnIsMilliomosGrafikusMegjelenessel
     /// </summary>
     public partial class NevAdas : Window
     {
-        public static string nev;
+       
 
         public NevAdas()
         {
@@ -28,8 +28,8 @@ namespace LegyenOnIsMilliomosGrafikusMegjelenessel
 
         private void btn_tovabb_Click(object sender, RoutedEventArgs e)
         {
-            nev = txb_nev.Text.ToString();
-            if (!nev.Equals(""))
+            FoJatek.nev = txb_nev.Text.ToString();
+            if (!FoJatek.nev.Equals(""))
             {
                 FoJatek f = new FoJatek();
                 this.Hide();

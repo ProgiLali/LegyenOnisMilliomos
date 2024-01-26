@@ -7,11 +7,18 @@
         mc:Ignorable="d"
         Title="Legyen Ön is Milliomos Játék" Height="450" Width="800" Background="#FF18132E">
     <Grid>
-        <Label x:Name="lbl_kerdes" Content="" Margin="70,72,70,0" VerticalAlignment="Top" Height="57" Foreground="#FF9EA6C1" FontSize="16"/>
-        <GroupBox x:Name="Keret" Header="" Height="100" Margin="60,40,60,0" VerticalAlignment="Top" Foreground="#FF9EA6C1"/>
+        <Label x:Name="lbl_kerdes" Content="" Margin="70,72,70,0" VerticalAlignment="Top" Height="57" Foreground="#FF9EA6C1" FontSize="16" />
+        <GroupBox x:Name="Keret" Header="" Height="100" Margin="60,40,60,0" VerticalAlignment="Top" Foreground="#FF9EA6C1" />
         <Button x:Name="btn_a" Content="" HorizontalAlignment="Left" Margin="70,190,0,0" VerticalAlignment="Top" Width="300" Height="43" Background="#FF6954C5" Foreground="#FF9EA6C1" Tag="A" Click="btn_valasz_Click"  />
-        <Button x:Name="btn_d" Content="" HorizontalAlignment="Left" Margin="422,264,0,0" VerticalAlignment="Top" Width="300" Height="43" Background="#FF6954C5" Foreground="#FF9EA6C1" Tag="D" Click="btn_valasz_Click"/>
-        <Button x:Name="btn_c" Content="" HorizontalAlignment="Left" Margin="70,264,0,0" VerticalAlignment="Top" Width="300" Height="43" Background="#FF6954C5" Foreground="#FF9EA6C1" Tag="C" Click="btn_valasz_Click"/>
-        <Button x:Name="btn_b" Content="" HorizontalAlignment="Left" Margin="422,190,0,0" VerticalAlignment="Top" Width="300" Height="43" Background="#FF6954C5" Foreground="#FF9EA6C1" Tag="B" Click="btn_valasz_Click"/>
+        <Button x:Name="btn_d" Content="" HorizontalAlignment="Left" Margin="422,264,0,0" VerticalAlignment="Top" Width="300" Height="43" Background="#FF6954C5" Foreground="#FF9EA6C1" Tag="D" Click="btn_valasz_Click" />
+        <Button x:Name="btn_c" Content="" HorizontalAlignment="Left" Margin="70,264,0,0" VerticalAlignment="Top" Width="300" Height="43" Background="#FF6954C5" Foreground="#FF9EA6C1" Tag="C" Click="btn_valasz_Click" />
+        <Button x:Name="btn_b" Content="" HorizontalAlignment="Left" Margin="422,190,0,0" VerticalAlignment="Top" Width="300" Height="43" Background="#FF6954C5" Foreground="#FF9EA6C1" Tag="B" Click="btn_valasz_Click" />
+        <Label x:Name="lbl_uzenet" Content="Gratulálok, továbbjutottál, kérlek válasz a következő lehetőségek közül:" Margin="105,105,105,0" VerticalAlignment="Top" Height="35" Foreground="#FF9EA6C1" FontSize="18" Visibility="Hidden"/>
+        <Button x:Name="btn_kovetkezoKerdes" Content="" Margin="140,200,140,0" VerticalAlignment="Top" Height="43" Background="#FF6954C5" Foreground="#FF9EA6C1" FontSize="16" Click="btn_kovetkezoKerdes_Click" Visibility="Hidden"/>
+        <Button x:Name="btn_kilepes" Content="" Margin="140,264,140,0" VerticalAlignment="Top" Height="43" Background="#FF6954C5" Foreground="#FF9EA6C1" FontSize="16" Click="btn_kilepes_Click" Visibility="Hidden"/>
+        <Label x:Name="lbl_segit" Content="Segitségek:" HorizontalAlignment="Left" Margin="60,350,0,0" VerticalAlignment="Top" Width="96" Foreground="#FF9EA6C1" FontSize="16"/>
+        <Button x:Name="btn_felezes" Content="Felezés" HorizontalAlignment="Left" Margin="184,350,0,0" VerticalAlignment="Top" Width="145" Height="31" Background="#FF6954C5" Foreground="#FF9EA6C1" FontSize="16" Click="btn_felezes_Click"/>
+        <Button x:Name="btn_kozonseg" Content="Közönség segítség" HorizontalAlignment="Left" Margin="348,350,0,0" VerticalAlignment="Top" Width="145" Height="31" Background="#FF6954C5" Foreground="#FF9EA6C1" FontSize="16" Click="btn_kozonseg_Click" />
+        <Button x:Name="btn_kiszallas" Content="Megállás" HorizontalAlignment="Left" Margin="587,350,0,0" VerticalAlignment="Top" Width="145" Height="31" Background="#FF6954C5" Foreground="#FF9EA6C1" FontSize="16" Click="btn_kilepes_Click" />
     </Grid>
 </Window>

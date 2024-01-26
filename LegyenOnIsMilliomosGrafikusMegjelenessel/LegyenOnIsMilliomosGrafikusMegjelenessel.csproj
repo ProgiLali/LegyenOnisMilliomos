@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DicsosegLista.xaml.cs">
+      <DependentUpon>DicsosegLista.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FoJatek.xaml.cs">
       <DependentUpon>FoJatek.xaml</DependentUpon>
     </Compile>
@@ -62,8 +65,13 @@
     <Compile Include="NevAdas.xaml.cs">
       <DependentUpon>NevAdas.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Nyertes.cs" />
     <Compile Include="SorKerdes.cs" />
     <Compile Include="SorKerdesek.cs" />
+    <Page Include="DicsosegLista.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FoJatek.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

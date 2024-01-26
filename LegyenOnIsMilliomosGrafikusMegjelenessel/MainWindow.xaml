@@ -9,7 +9,9 @@
     <Grid>
         <Label Content="Üdvözzöllek a Legyen ön is Milliomos játék főmenüjében."  Margin="112,79,111,0" VerticalAlignment="Top" Height="42" FontSize="22" FontStyle="Italic" Foreground="#FF9EA6C1"/>
         <Button x:Name="btn_ujJatek" Content="Új játék" Margin="276,179,276,0" VerticalAlignment="Top" Background="#FF6954C5" Height="33" Foreground="#FF9EA6C1" FontSize="16" Click="btn_ujJatek_Click"/>
-        <Button x:Name="btn_informacio" Content="Játék szabályok" Margin="276,233,276,0" VerticalAlignment="Top" Background="#FF6954C5" Height="33" Foreground="#FF9EA6C1" FontSize="16" Click="btn_informacio_Click"/>
+        <Button x:Name="btn_informacio" Content="Játék szabályok" Margin="276,331,276,0" VerticalAlignment="Top" Background="#FF6954C5" Height="33" Foreground="#FF9EA6C1" FontSize="16" Click="btn_informacio_Click"/>
+        <Button x:Name="btn_dicsoseg" Content="Dicsőség Lista" Margin="276,280,276,0" VerticalAlignment="Top" Background="#FF6954C5" Height="33" Foreground="#FF9EA6C1" FontSize="16" Click="btn_dicsoseg_Click" />
+        <Button x:Name="btn_betoltes" Content="Játék betöltése" Margin="276,229,276,0" VerticalAlignment="Top" Background="#FF6954C5" Height="33" Foreground="#FF9EA6C1" FontSize="16" Click="btn_betoltes_Click" />
 
     </Grid>
 </Window>
